@@ -60,7 +60,7 @@ def build_svg(ascii_rows, cols: int) -> str:
 
         defs.append(f"""
     <clipPath id="{clip_id}">
-      <rect x="0" y="0" width="0" height="{CHAR_H}">
+      <rect x="0" y="{10 + i * CHAR_H}" width="0" height="{CHAR_H}">
         <animate attributeName="width" from="0" to="{row_width}"
                  begin="{begin}s" dur="{ROW_DURATION}s"
                  fill="freeze" calcMode="spline"
