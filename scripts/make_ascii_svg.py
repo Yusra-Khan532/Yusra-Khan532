@@ -32,7 +32,6 @@ def image_to_ascii_rows(path: str, cols: int, rows: int):
         row_chars = []
         for c in range(cols):
             brightness = pixels[r * cols + c]  # 0=black .. 255=white
-            # invert: bright -> sparse (start of ramp), dark -> dense (end)
             idx = int((255 - brightness) / 255 * (RAMP_LEN - 1))
             row_chars.append(RAMP[idx])
         ascii_rows.append("".join(row_chars))
@@ -55,12 +54,10 @@ def build_svg(ascii_rows, cols: int) -> str:
     body = []
 
     for i, row in enumerate(ascii_rows):
-        row_id = f"row{i}"
         clip_id = f"clip{i}"
         begin = round(i * ROW_STAGGER, 3)
         row_width = cols * CHAR_W
 
-        # Clip rect that wipes left -> right, then freezes full-width.
         defs.append(f"""
     <clipPath id="{clip_id}">
       <rect x="0" y="0" width="0" height="{CHAR_H}">
@@ -72,7 +69,7 @@ def build_svg(ascii_rows, cols: int) -> str:
     </clipPath>""")
 
         y = 10 + i * CHAR_H + FONT_SIZE
-        text = escape_xml(row).replace(" ", "\u00a0")  # preserve leading spaces
+        text = escape_xml(row).replace(" ", "\u00a0")
 
         body.append(f"""
     <g clip-path="url(#{clip_id})">
@@ -100,6 +97,6 @@ def build_svg(ascii_rows, cols: int) -> str:
 if __name__ == "__main__":
     rows = image_to_ascii_rows(PATHS["source_prepped"], ASCII_COLS, ASCII_ROWS)
     svg = build_svg(rows, ASCII_COLS)
-    with open(PATHS["ascii_svg"], "w") as f:
+    with open(PATHS["ascii_svg"], "w", encoding="utf-8") as f:
         f.write(svg)
     print(f"Wrote {PATHS['ascii_svg']}")
