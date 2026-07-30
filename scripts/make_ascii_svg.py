@@ -1,93 +1,61 @@
 """
 make_ascii_svg.py — downsample the prepped photo to a character grid and
-render it as an SVG that "types" itself in: each row is masked by a
-clip-path rect whose width animates 0 -> full, staggered top-to-bottom,
-with a small block cursor riding the wipe edge. Plays once, then freezes
-(fill="freeze") — no looping.
-
-Usage:
-    python scripts/make_ascii_svg.py
+render it as an SVG that "types" itself in: each row fades in and slides
+in slightly, staggered top to bottom. Plays once, then freezes (fill="freeze").
 """
 
 from PIL import Image
 from config import PATHS, ASCII_COLS, ASCII_ROWS, ASCII_RAMP
 
-CHAR_W = 7.2      # px advance per monospace character at the chosen font-size
-CHAR_H = 13.5      # px line height
+CHAR_W = 7.2
+CHAR_H = 13.5
 FONT_SIZE = 13
-ROW_STAGGER = 0.045   # seconds between each row's animation start
-ROW_DURATION = 0.5    # seconds for a single row to fully wipe in
-FILL_COLOR = "#a8b4c2"   # single light-gray fill (monochrome, no rainbow)
-CURSOR_COLOR = "#e6edf3"
+ROW_STAGGER = 0.045
+ROW_DURATION = 0.35
+FILL_COLOR = "#a8b4c2"
 
 RAMP = ASCII_RAMP
 RAMP_LEN = len(RAMP)
 
 
-def image_to_ascii_rows(path: str, cols: int, rows: int):
+def image_to_ascii_rows(path, cols, rows):
     img = Image.open(path).convert("L").resize((cols, rows))
     pixels = list(img.getdata())
     ascii_rows = []
     for r in range(rows):
         row_chars = []
         for c in range(cols):
-            brightness = pixels[r * cols + c]  # 0=black .. 255=white
+            brightness = pixels[r * cols + c]
             idx = int((255 - brightness) / 255 * (RAMP_LEN - 1))
             row_chars.append(RAMP[idx])
         ascii_rows.append("".join(row_chars))
     return ascii_rows
 
 
-def escape_xml(s: str) -> str:
-    return (
-        s.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-    )
+def escape_xml(s):
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def build_svg(ascii_rows, cols: int) -> str:
+def build_svg(ascii_rows, cols):
     width = cols * CHAR_W + 20
     height = len(ascii_rows) * CHAR_H + 20
-
-    defs = []
     body = []
 
     for i, row in enumerate(ascii_rows):
-        clip_id = f"clip{i}"
         begin = round(i * ROW_STAGGER, 3)
-        row_width = cols * CHAR_W
-
-        defs.append(f"""
-    <clipPath id="{clip_id}">
-      <rect x="0" y="0" width="0" height="{CHAR_H}">
-        <animate attributeName="width" from="0" to="{row_width}"
-                 begin="{begin}s" dur="{ROW_DURATION}s"
-                 fill="freeze" calcMode="spline"
-                 keySplines="0.25 0.1 0.25 1" />
-      </rect>
-    </clipPath>""")
-
         y = 10 + i * CHAR_H + FONT_SIZE
         text = escape_xml(row).replace(" ", "\u00a0")
 
         body.append(f"""
-    <g clip-path="url(#{clip_id})">
+    <g opacity="0" transform="translate(-6,0)">
+      <animate attributeName="opacity" from="0" to="1" begin="{begin}s" dur="{ROW_DURATION}s" fill="freeze" />
+      <animateTransform attributeName="transform" type="translate"
+                         from="-6,0" to="0,0" begin="{begin}s" dur="{ROW_DURATION}s" fill="freeze" />
       <text x="10" y="{y}" font-family="'SFMono-Regular','Consolas','Menlo',monospace"
             font-size="{FONT_SIZE}" fill="{FILL_COLOR}" xml:space="preserve">{text}</text>
-    </g>
-    <rect x="10" y="{10 + i * CHAR_H}" width="{CHAR_W}" height="{CHAR_H - 2}"
-          fill="{CURSOR_COLOR}" opacity="0">
-      <animate attributeName="x" from="10" to="{10 + row_width}"
-               begin="{begin}s" dur="{ROW_DURATION}s" fill="freeze"
-               calcMode="spline" keySplines="0.25 0.1 0.25 1" />
-      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.85;1"
-               begin="{begin}s" dur="{ROW_DURATION}s" fill="freeze" />
-    </rect>""")
+    </g>""")
 
     svg = f"""<svg viewBox="0 0 {width:.0f} {height:.0f}" xmlns="http://www.w3.org/2000/svg">
-  <defs>{"".join(defs)}
-  </defs>
   <rect width="100%" height="100%" fill="#0d1117" />
   {"".join(body)}
 </svg>"""
