@@ -68,3 +68,7 @@ if __name__ == "__main__":
     with open(PATHS["ascii_svg"], "w", encoding="utf-8") as f:
         f.write(svg)
     print(f"Wrote {PATHS['ascii_svg']}")
+    svg = build_svg(rows, ASCII_COLS)
+    with open(PATHS["ascii_svg"], "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"Wrote {PATHS['ascii_svg']}")
