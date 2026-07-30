@@ -11,25 +11,20 @@ Edit GITHUB_USERNAME (and optionally NOW_PLAYING) then run the scripts in order:
 
 import os
 
-# --- REQUIRED: change this ---
-GITHUB_USERNAME = os.environ.get("Yusra-Khan532", "Yusra-Khan532")
+GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME", "Yusra-Khan532")
 
-# --- neofetch card content: edit freely ---
 CARD_FIELDS = {
-    "user":       f"{Yusra-Khan532}@github",
+    "user":       f"{GITHUB_USERNAME}@github",
     "now":        "Software Engineer, Data Analyst",
     "prev":       "Previous role / school",
     "stack":      "MERN, Python",
     "highlights":  "Shipped X, built Y, spoke at Z",
-    # Optional: shown as its own row in the card. Not real audio -
-    # GitHub strips <audio>/<video>/autoplay, this is just a text/status line.
-    "now_playing": "Now Playing: (edit me, or leave blank to omit)",
+    "now_playing": "",
 }
 
-# --- visual tuning ---
 ASCII_COLS = 100
 ASCII_ROWS = 53
-ASCII_RAMP = " .`:-=+*cs#%@"   # bright (sparse) -> dark (dense)
+ASCII_RAMP = " .`:-=+*cs#%@"
 
 HEATMAP_PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
 
