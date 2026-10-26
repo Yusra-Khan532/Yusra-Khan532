@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="Tech stack">
+<text x="20" y="31" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="600" fill="#8ea3c4" letter-spacing="1">LANGUAGES</text><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.15s" dur="0.4s" fill="freeze"/>
+<rect x="200" y="6" width="160" height="40" rx="20" fill="#111f3a" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="217" cy="26" r="4.5" fill="#5eead4"><animate attributeName="opacity" values="1;0.35;1" dur="2.5s" begin="0.15s" repeatCount="indefinite"/></circle>
+<text x="288" text-anchor="middle" y="32" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">JavaScript</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.23s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.23s" dur="0.4s" fill="freeze"/>
+<rect x="372.0" y="6" width="118" height="40" rx="20" fill="#111f3a" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="389.0" cy="26" r="4.5" fill="#5eead4"><animate attributeName="opacity" values="1;0.35;1" dur="2.9s" begin="0.23s" repeatCount="indefinite"/></circle>
+<text x="440" text-anchor="middle" y="32" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Python</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.31s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.31s" dur="0.4s" fill="freeze"/>
+<rect x="502.4" y="6" width="87" height="40" rx="20" fill="#111f3a" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="519.4" cy="26" r="4.5" fill="#5eead4"><animate attributeName="opacity" values="1;0.35;1" dur="3.3s" begin="0.31s" repeatCount="indefinite"/></circle>
+<text x="554" text-anchor="middle" y="32" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">C++</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.39s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.39s" dur="0.4s" fill="freeze"/>
+<rect x="601.6" y="6" width="66" height="40" rx="20" fill="#111f3a" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="618.6" cy="26" r="4.5" fill="#5eead4"><animate attributeName="opacity" values="1;0.35;1" dur="3.7s" begin="0.39s" repeatCount="indefinite"/></circle>
+<text x="643" text-anchor="middle" y="32" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">C</text></g><text x="20" y="93" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="600" fill="#8ea3c4" letter-spacing="1">FRONTEND</text><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.47s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.47s" dur="0.4s" fill="freeze"/>
+<rect x="200" y="68" width="139" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="217" cy="88" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="2.5s" begin="0.47s" repeatCount="indefinite"/></circle>
+<text x="278" text-anchor="middle" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">React.js</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.55s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.55s" dur="0.4s" fill="freeze"/>
+<rect x="351.2" y="68" width="129" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="368.2" cy="88" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="2.9s" begin="0.55s" repeatCount="indefinite"/></circle>
+<text x="424" text-anchor="middle" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Next.js</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.63s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.63s" dur="0.4s" fill="freeze"/>
+<rect x="492.0" y="68" width="108" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="509.0" cy="88" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="3.3s" begin="0.63s" repeatCount="indefinite"/></circle>
+<text x="554" text-anchor="middle" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">HTML5</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.71s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.71s" dur="0.4s" fill="freeze"/>
+<rect x="612.0" y="68" width="98" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="629.0" cy="88" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="3.7s" begin="0.71s" repeatCount="indefinite"/></circle>
+<text x="669" text-anchor="middle" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">CSS3</text></g><text x="20" y="155" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="600" fill="#8ea3c4" letter-spacing="1">BACKEND</text><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.79s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.79s" dur="0.4s" fill="freeze"/>
+<rect x="200" y="130" width="129" height="40" rx="20" fill="#111f3a" stroke="#a78bfa" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="217" cy="150" r="4.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.35;1" dur="2.5s" begin="0.79s" repeatCount="indefinite"/></circle>
+<text x="273" text-anchor="middle" y="156" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Node.js</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.87s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.87s" dur="0.4s" fill="freeze"/>
+<rect x="340.8" y="130" width="160" height="40" rx="20" fill="#111f3a" stroke="#a78bfa" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="357.8" cy="150" r="4.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.35;1" dur="2.9s" begin="0.87s" repeatCount="indefinite"/></circle>
+<text x="429" text-anchor="middle" y="156" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Express.js</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="0.95s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="0.95s" dur="0.4s" fill="freeze"/>
+<rect x="512.8" y="130" width="150" height="40" rx="20" fill="#111f3a" stroke="#a78bfa" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="529.8" cy="150" r="4.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.35;1" dur="3.3s" begin="0.95s" repeatCount="indefinite"/></circle>
+<text x="596" text-anchor="middle" y="156" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">REST APIs</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.03s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.03s" dur="0.4s" fill="freeze"/>
+<rect x="674.4" y="130" width="129" height="40" rx="20" fill="#111f3a" stroke="#a78bfa" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="691.4" cy="150" r="4.5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.35;1" dur="3.7s" begin="1.03s" repeatCount="indefinite"/></circle>
+<text x="747" text-anchor="middle" y="156" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">GraphQL</text></g><text x="20" y="217" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="600" fill="#8ea3c4" letter-spacing="1">DATA</text><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.11s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.11s" dur="0.4s" fill="freeze"/>
+<rect x="200" y="192" width="129" height="40" rx="20" fill="#111f3a" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="217" cy="212" r="4.5" fill="#5eead4"><animate attributeName="opacity" values="1;0.35;1" dur="2.5s" begin="1.11s" repeatCount="indefinite"/></circle>
+<text x="273" text-anchor="middle" y="218" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">MongoDB</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.19s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.19s" dur="0.4s" fill="freeze"/>
+<rect x="340.8" y="192" width="108" height="40" rx="20" fill="#111f3a" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="357.8" cy="212" r="4.5" fill="#5eead4"><animate attributeName="opacity" values="1;0.35;1" dur="2.9s" begin="1.19s" repeatCount="indefinite"/></circle>
+<text x="403" text-anchor="middle" y="218" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">MySQL</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.27s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.27s" dur="0.4s" fill="freeze"/>
+<rect x="460.8" y="192" width="139" height="40" rx="20" fill="#111f3a" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="477.8" cy="212" r="4.5" fill="#5eead4"><animate attributeName="opacity" values="1;0.35;1" dur="3.3s" begin="1.27s" repeatCount="indefinite"/></circle>
+<text x="539" text-anchor="middle" y="218" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Firebase</text></g><text x="20" y="279" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="600" fill="#8ea3c4" letter-spacing="1">TESTING &amp; TOOLS</text><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.35s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.35s" dur="0.4s" fill="freeze"/>
+<rect x="200" y="254" width="98" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="217" cy="274" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="3.7s" begin="1.35s" repeatCount="indefinite"/></circle>
+<text x="257" text-anchor="middle" y="280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Jest</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.43s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.43s" dur="0.4s" fill="freeze"/>
+<rect x="309.6" y="254" width="129" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="326.6" cy="274" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="2.5s" begin="1.43s" repeatCount="indefinite"/></circle>
+<text x="382" text-anchor="middle" y="280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Postman</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.51s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.51s" dur="0.4s" fill="freeze"/>
+<rect x="450.40000000000003" y="254" width="87" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="467.40000000000003" cy="274" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="2.9s" begin="1.51s" repeatCount="indefinite"/></circle>
+<text x="503" text-anchor="middle" y="280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Git</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.59s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.59s" dur="0.4s" fill="freeze"/>
+<rect x="549.6" y="254" width="108" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="566.6" cy="274" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="3.3s" begin="1.59s" repeatCount="indefinite"/></circle>
+<text x="612" text-anchor="middle" y="280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Figma</text></g><g opacity="0" transform="translate(0,8)">
+<animate attributeName="opacity" from="0" to="1" begin="1.67s" dur="0.4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.67s" dur="0.4s" fill="freeze"/>
+<rect x="669.6" y="254" width="118" height="40" rx="20" fill="#111f3a" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="686.6" cy="274" r="4.5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.35;1" dur="3.7s" begin="1.67s" repeatCount="indefinite"/></circle>
+<text x="737" text-anchor="middle" y="280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#e6edf7">Cursor</text></g>
+</svg>
