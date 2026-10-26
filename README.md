@@ -45,6 +45,17 @@ replace REPO-NAME-1 / REPO-NAME-2 with your repo names.
 </picture>
 -->
 
+<!-- ===================== GITHUB ACTIVITY ===================== -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+  <img src="./assets/activity-light.svg" alt="GitHub contribution activity for Yusra-Khan532 over the last 12 months" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg">
+  <img src="./assets/divider-light.svg" alt="" width="100%">
+</picture>
+
 <!-- ===================== ABOUT ===================== -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/title-about-dark.svg">

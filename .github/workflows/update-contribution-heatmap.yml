@@ -1,0 +1,31 @@
+name: Update contribution heatmap
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate heatmap from GitHub contributions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: Yusra-Khan532
+        run: python scripts/generate_contribution_heatmap.py
+      - name: Commit updated heatmap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity-dark.svg assets/activity-light.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(profile): refresh contribution heatmap [skip ci]"
+          git push
